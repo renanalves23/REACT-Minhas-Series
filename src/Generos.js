@@ -33,7 +33,7 @@ const Generos = () => {
 
   return (
     <div className='container'>
-       <h1 path='/api/genres'>Generos</h1>
+       <h1 path='/api/genres'>Gêneros</h1>
        <table className="table table-dark">
             <thead>
               <tr>
