@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from './Header'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import axios from 'axios'
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Generos = () => {
 }
 
 function App() {
+  
   return (
     <Router>
         <div>
