@@ -20,9 +20,19 @@ const Generos = () => {
     )
   }
 
+  if(data.length === 0) {
+    return (
+      <div className="container">
+        <h1>Gêneros</h1>
+        <div className="alert alert-warning" role="alert">
+           Você não possui gêneros criados!
+        </div>
+      </div>
+    )
+  }
 
   return (
-    <div>
+    <div className='container'>
        <h1 path='/api/genres'>Generos</h1>
        <table className="table table-dark">
             <thead>
