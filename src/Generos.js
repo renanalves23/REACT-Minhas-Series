@@ -12,10 +12,10 @@ const Generos = () => {
 
   const renderizaLinha = record => {
     return (
-      <tr>
-        <th scope="row">1</th>
+      <tr key={record.id}>
+        <th scope="row">{record.id}</th>
         <td>{record.name}</td>
-        <td></td>
+        <td><button>+</button></td>
       </tr>
     )
   }
