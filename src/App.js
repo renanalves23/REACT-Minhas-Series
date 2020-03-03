@@ -2,16 +2,14 @@ import React, { useState } from 'react'
 
 import { Navbar, NavbarBrand, Collapse, Nav, NavItem, NavLink, NavbarToggler } from 'reactstrap'
 
-function App() {
-const [open, setOpen] = useState(false)
+const Header = () => {
+    const [open, setOpen] = useState(false)
 
-const toggle = () => {
-  setOpen(!open)
-}
-
+    const toggle = () => {
+    setOpen(!open)
+  }
   return (
-    <div>
-    <Navbar color='light' light expand='md'>
+  <Navbar color='light' light expand='md'>
       <NavbarBrand>Minhas Séries</NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={open} navbar> 
@@ -22,6 +20,13 @@ const toggle = () => {
         </Nav>
       </Collapse>
     </Navbar> 
+  )
+}
+
+function App() {
+  return (
+    <div>
+      <Header />
     </div>
   )
 }
