@@ -1,9 +1,12 @@
-import React from 'react';
+import React from 'react'
+import { Navbar, NavbarBrand } from 'reactstrap'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Minhas Series</h1>
+    <div>
+    <Navbar color='light' light expand='md'>
+      <NavbarBrand>Minhas Séries</NavbarBrand>
+    </Navbar> 
     </div>
   )
 }
