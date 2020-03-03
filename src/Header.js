@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Navbar, NavbarBrand, Collapse, Nav, NavItem, NavLink, NavbarToggler } from 'reactstrap'
-//importar LINK 
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -11,12 +11,12 @@ const Header = () => {
 }
 return (
      <Navbar color='light' light expand='md'>
-        <NavbarBrand>Minhas Séries</NavbarBrand>
+        <NavbarBrand tag={Link} to='/'>Minhas Séries</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={open} navbar> 
           <Nav className='ml-auto' navbar>
             <NavItem>
-              <NavLink href='/'>Gêneros</NavLink>
+              <NavLink tag={Link} to='/generos'>Gêneros</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
