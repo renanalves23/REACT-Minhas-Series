@@ -25,8 +25,8 @@ const deleteGenero = id =>{
         <th scope="row">{record.id}</th>
         <td>{record.name}</td>
         <td>
-          <button className='btn btn-danger' onClick={() => deleteGenero(record.id)}>-</button>
-          <Link to={'/generos/' + record.id}>Editar</Link>
+          <button className='btn btn-danger' onClick={() => deleteGenero(record.id)}>Remover</button>
+          <Link to={'/generos/' + record.id} className='btn btn-warning'>Editar</Link>
           </td>
       </tr>
     )
@@ -46,7 +46,7 @@ const deleteGenero = id =>{
   return (
     <div className='container'>
        <h1 path='/api/genres'>Gêneros</h1>
-       <Link to='generos/novo'>Novo Gênero</Link>
+       <div><Link to='generos/novo' className="btn btn-primary">Novo Gênero</Link></div>
        <table className="table table-dark">
             <thead>
               <tr>
